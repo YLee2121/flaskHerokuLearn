@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "bingbo"
 
-@app.route('/hello')
+@app.route('/')
 def index():
     flash("what is your name?")
     return render_template("index.html")
