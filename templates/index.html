@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SAY HELLO</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+
+    <body>
+        <img src="data:image/png;base64,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" alt="">    
+        <br>
+        <form action="greet" method="post">
+            {% for mes in get_flashed_messages() %}
+                <p>{{mes}}</p>
+            {% endfor %}
+         
+            <br>
+            <input type="text" name="name_input">
+            <br>
+            <input type="submit" value="GREET" id="greet">
+        </form>
+
+    </body>
+
+</html>
